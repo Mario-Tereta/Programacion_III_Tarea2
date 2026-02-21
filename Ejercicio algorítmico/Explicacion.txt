@@ -1,0 +1,49 @@
+Ejemplo
+
+Arreglo:
+
+[8, 3, 15, 6, 2, 15, 1]
+
+Resultado:
+
+Mayor = 15
+
+Segundo mayor = 8
+
+Menor = 1
+
+Segundo menor = 2
+
+
+¿Por qué funciona?
+
+El algoritmo funciona porque:
+
+Recorre el arreglo una sola vez.
+
+Mantiene los mejores valores encontrados hasta el momento.
+
+Cada número se compara solo con los valores actuales.
+
+Evita duplicados al verificar x ≠ mayor y x ≠ menor.
+
+Esto garantiza que al final del recorrido tengamos los valores correctos.
+
+Complejidad
+Tiempo
+
+Se recorre el arreglo una vez.
+
+Cada elemento realiza comparaciones constantes.
+
+𝑂(𝑛)
+O(n)
+	​
+
+Espacio
+
+Solo se usan cuatro variables adicionales.
+
+𝑂(1)
+O(1)
+	​

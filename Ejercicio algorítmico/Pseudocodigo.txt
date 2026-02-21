@@ -1,0 +1,38 @@
+Inicio
+
+Leer arreglo A con n elementos
+
+Si n < 2 entonces
+    Escribir "No hay suficientes datos"
+    Termiar
+FinSi
+
+mayor ← -∞
+segMayor ← -∞
+menor ← +∞
+segMenor ← +∞
+
+Para cada elemento x en A hacer
+
+    // actualizar mayor y segundo mayor
+    Si x > mayor entonces
+        segMayor ← mayor
+        mayor ← x
+    Sino Si x > segMayor Y x ≠ mayor entonces
+        segMayor ← x
+    FinSi
+
+    // actualizar menor y segundo menor
+    Si x < menor entonces
+        segMenor ← menor
+        menor ← x
+    Sino Si x < segMenor Y x ≠ menor entonces
+        segMenor ← x
+    FinSi
+
+FinPara
+
+Escribir "Segundo mayor: ", segMayor
+Escribir "Segundo menor: ", segMenor
+
+Fin
